@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //create object
+        const Student={
+            name:"Priyanshu",
+            class:"CSE(DS)",
+            rollno:2400321540145,
+            fee:128600
+        }
+        // document.write("<br> Student name:",Student.name)
+        // document.write("<br> Student class",Student.class)
+        // document.write("<br> Student rollno:",Student.rollno)
+        // document.write("<br> Student fee:",Student.fee)
+        // document.getElementsByClassName("Student").innerHTML=Student;
+        // document.write(Student) //[object Object]
+        // console.log(Student)
+        // document.write(JSON.stringify(Student,null,4))
+        // for (const key in Student) {
+        //     console.log(key, Student[key]);
+        // }
+        for(const i in Student){
+            document.write("<br>"+i +":"+ Student[i])
+        }
+        
+    </script>
+</body>
+</html>

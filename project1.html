@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const aeroplane=(name,cost,capacity)=>{
+            return `aroplane name is ${name} cost is ${cost} rupees and capacity ${capacity} seet`;
+
+        }
+        const car=(name,cost,capacity)=>{
+            return  `car name is ${name} cost is ${cost} rupees and capacity ${capacity} seet`;
+        }
+        const helicopter=(name,cost,capacity)=>{
+            return  `helicopter name is ${name} cost is ${cost} rupees and capacity ${capacity} seet`;
+        }
+        var n=prompt("enter your no.")
+        if(n==1){
+            var name=prompt("enter name of aeroplane")
+            var cost=prompt("enter your seat")
+            
+            document.write(aeroplane("Air India",2000000,100))
+        }else if(n==2){
+            document.write(car("bugaati",50000000,2))
+        }else if(n==3){
+            document.write(helicopter("Apachi",2000000,10))
+        }
+    </script>
+</body>
+</html>

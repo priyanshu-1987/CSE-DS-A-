@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="a" style="border: 2px solid black;">
+        <h1>Welcome , my shop</h1>
+        <h3>item name</h3>
+        <h4>Tea:</h4>
+        <h4>Coffe</h4>
+        <h4>Suger</h4>
+        <h4>Pules</h4>
+    </div>
+    <form>
+
+    </form>
+    <p></p>
+    <script>
+        const item={
+            Tea:450,
+            Coffe:600,
+            Suger:700,
+            Pulse:100
+        }
+        var name=prompt("Enter you product name:")
+        var quantity=prompt("enter quantity")
+        for(const i in item){
+            if(i==name){
+                document.write("Total Amount:"+item[i]*quantity)
+            }
+        }
+    </script>
+</body>
+</html>
